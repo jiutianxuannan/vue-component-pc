@@ -1,0 +1,55 @@
+[{
+    "title": "按钮",
+    "name": "button"
+}, {
+    "title": "单选",
+    "name": "radio"
+}, {
+    "title": "多选",
+    "name": "checkbox"
+}, {
+    "title": "input输入框",
+    "name": "input"
+}, {
+    "title": "开关",
+    "name": "switch"
+}, {
+    "title": "数字输入框",
+    "name": "inputNumber"
+}, {
+    "title": "select下拉",
+    "name": "select"
+}, {
+    "title": "cascader级联选择器",
+    "name": "cascader"
+}, {
+    "title": "tabs切换",
+    "name": "tabs"
+}, {
+    "title": "tooltip文字",
+    "name": "tooltip"
+}, {
+    "title": "dialog弹窗",
+    "name": "dialog"
+}, {
+    "title": "popover弹出框",
+    "name": "popover"
+}, {
+    "title": "card卡片",
+    "name": "card"
+}, {
+    "title": "走马灯",
+    "name": "carousel"
+}, {
+    "title": "Collapse 折叠面板",
+    "name": "collapse"
+}, {
+    "title": "Timeline 时间线",
+    "name": "timeline"
+}, {
+    "title": "Divider 分割线",
+    "name": "divider"
+}, {
+    "title": "image 图片",
+    "name": "image"
+}]

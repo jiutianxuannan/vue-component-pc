@@ -6,7 +6,16 @@ import Switch from '@/components/switch';
 import InputNumber from '@/components/input-number';
 import { Select, Option } from '@/components/select';
 import { Cascader, CascaderPanel } from '@/components/cascader';
-
+import { Tabs, TabPane } from '@/components/tabs';
+import Tooltip from '@/components/tooltip';
+import Dialog from '@/components/dialog';
+import Popover from '@/components/popover';
+import Card from '@/components/card';
+import { Carousel, CarouselItem } from '@/components/carousel';
+import { Collapse, CollapseItem } from '@/components/collapse';
+import { Timeline, TimelineItem } from '@/components/timeline';
+import Divider from '@/components/divider';
+import { Image, ImageViewer } from '@/components/image';
 const components = {
   Button,
   Radio,
@@ -19,7 +28,22 @@ const components = {
   Select,
   Option,
   Cascader,
-  CascaderPanel
+  CascaderPanel,
+  Tabs,
+  TabPane,
+  Tooltip,
+  Dialog,
+  Popover,
+  Card,
+  Carousel,
+  CarouselItem,
+  Collapse,
+  CollapseItem,
+  Timeline,
+  TimelineItem,
+  Divider,
+  Image,
+  ImageViewer
 };
 
 const directives = {

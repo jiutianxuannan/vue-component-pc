@@ -1,73 +1,37 @@
 <template>
   <div id="app">
-    <div class="menu-demo-1-vue" :style="{width: inlineCollapsed?'70px':'250px'}">
-      <!-- <Menu :datas="data" :activeAll="activeAll" :className="theme" :inlineCollapsed="inlineCollapsed" ref="menu"
-        :accordion="accordion" @select="triggerSelect"></Menu> -->
+    <div class="menu-demo-1-vue">
+      <y-tabs tab-position="left" v-model="activeName">
+        <y-tab-pane :label="item.title" :name="item.name" v-for="(item,index) in data" :key="index"></y-tab-pane>
+      </y-tabs>
     </div>
     <router-view />
   </div>
 </template>
 <script>
+  import components from './component.json'
   export default {
     data() {
       return {
-        accordion: false,
-        inlineCollapsed: false,
-        activeAll: false,
-        theme: 'h-menu-white',
-        data: [{
-          title: '按钮',
-          key: 'button',
-        },
-        {
-          title: '单选',
-          key: 'radio',
-        },
-        {
-          title: '多选',
-          key: 'checkbox',
-        },
-        {
-          title: 'input输入框',
-          key: 'input',
-        },
-        {
-          title: '开关',
-          key: 'switch',
-        },
-        {
-          title: '数字输入框',
-          key: 'inputNumber',
-        },
-        {
-          title: 'select下拉',
-          key: 'select',
-        },
-        {
-          title: 'cascader级联选择器',
-          key: 'cascader',
-        }]
+        activeName: 'button',
+        data: components
       }
     },
-    methods: {
-      // select(key) {
-      //   this.$refs.menu.select(key);
-      //   this.$router.push({
-      //     name: key
-      //   })
-      // },
-      // triggerSelect(menu) {
-      //   this.$router.push({
-      //     name: menu.key
-      //   })
-      // }
+    watch: {
+      activeName(val) {
+        this.$router.push({
+          name: val
+        })
+      }
     },
     mounted() {
-      // this.select('button')
+      this.$router.push({
+        name: 'button'
+      })
     }
   }
 </script>
-<style lang="less">
+<style>
   #app {
     display: flex;
     margin-top: 50px;
